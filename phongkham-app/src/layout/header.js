@@ -39,7 +39,7 @@ function Header() {
             <ul>
                 <li><Link to="/">Trang chủ</Link></li>
                 <li><Link to="#">Dịch vụ</Link></li>
-                <li><Link to="#">Đặt lịch khám</Link></li>
+                <li><Link to="/dangkykham">Đặt lịch khám</Link></li>
                 <li><Link to="#">Liên hệ</Link></li>
             </ul>
             {btn}

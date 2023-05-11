@@ -7,6 +7,8 @@ export const endpoints = {
     "oauth2-info" : "/oauth2-info/",
     "current-user": "/users/current-user/",
     "register": "/users/",
+    "dangkykham": "/dangky/",
+    "alaba": "/dangky/",
 }
 
 export const authApi = () => {

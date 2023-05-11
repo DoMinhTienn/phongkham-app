@@ -64,10 +64,11 @@
 
 .login-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 40vh;
   background-color: #f2f2f2;
+  color: white;
+  padding: 20px;
 }
 
 .login-container form {
@@ -106,9 +107,6 @@
 
 }
 
-.login-container button:hover {
-  background-color: #0077be;
-}
 
 .err-text-danger {
   font-size: 12px;
@@ -150,7 +148,7 @@
   position: absolute;
   bottom: -30px;
   left: 50%;
-  transform: translateX(-30%);
+  transform: translateX(-40%);
   background-color: white;
   color: #0077be;
   padding: 10px 10px;
@@ -175,63 +173,77 @@ footer ul li a {
   color: black;
 }
 
-.register {
+.register-user {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
+  color: white;
   padding: 20px;
-}
+  }
 
-.register form {
+  .register-user form {
+    background-color: white;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.register input:focus{
-  outline: none;
-}
-
-.register input[type="text"],
-.register input[type="password"],
-.register input[type="file"] {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border: 2px solid #ddd;
-  border-radius: 6px;
-}
-
-.register button {
-  background-color: #0077be;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.register span {
+  }
+  
+  .register-user div:first-child {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0077be;
   font-weight: 600;
-  font-size: 20px;
-}
+  }
+  .register-user div:last-child {
+    font-size: 12px;
+    color: #0077be;
+    }
+    .register-user div:last-child a {
+      font-size: 14px;
+      text-decoration: none;
+      color: red;
+      font-weight: 400;
+      }
 
-.register span.err{
-  font-size: 12px;
-  font-weight: normal;
-}
+  .login-container div:first-child {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0077be;
+    font-weight: 600;
+    }
+  
+  .register-user input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 6px;
 
-.register span.valid{
-  display: none;
-}
+  }
+  .register-user input[type="file"] {
+    width: 225px;
 
+  }
+
+  .register-user input:focus{
+    outline: none;
+  }
+  
+  .register-user button {
+    background-color: #0077be;
+    color: white;
+    padding: 10px 40px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .err{
+    border: 2px solid red !important;
+  }

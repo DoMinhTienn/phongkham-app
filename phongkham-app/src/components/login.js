@@ -49,6 +49,7 @@ const Login = () => {
 
         <div className='login-container'>
             <form onSubmit={login}>
+            <div>Đăng Nhập</div>
                 <input
                     type="text"
                     id="username"
@@ -60,14 +61,13 @@ const Login = () => {
                     type="password"
                     id="password"
                     value={password}
-                    onChange={(evt) => setPassword(evt.target.value)}
+                    onChange={(evt) =>{setPassword(evt.target.value); setErr(false)} }
                     placeholder="Password"
                 />
                 <div className={`${err ? 'err-text-danger' : 'err-hide'}`}>Sai tên đăng nhập hoặc mật khẩu</div>
 
                 <button type="submit">Login</button>
-                <Link tp="/">Quên mật khẩu?</Link>
-
+                <Link to="/login">Quên mật khẩu?</Link>
             </form>
         </div>
     )
