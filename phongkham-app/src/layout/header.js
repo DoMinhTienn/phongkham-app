@@ -31,13 +31,13 @@ function Header() {
       else
       btn = <> <nav className="login">
         <button><Link to="/login">Đăng nhập</Link></button>
-        <button><Link>Đăng ký</Link></button>
+        <button><Link to="/register">Đăng ký</Link></button>
     </nav> </>
     return (<>
        
         <nav className="header">
             <ul>
-                <li><Link to="#">Trang chủ</Link></li>
+                <li><Link to="/">Trang chủ</Link></li>
                 <li><Link to="#">Dịch vụ</Link></li>
                 <li><Link to="#">Đặt lịch khám</Link></li>
                 <li><Link to="#">Liên hệ</Link></li>

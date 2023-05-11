@@ -3,7 +3,7 @@ import { UserContext } from '../App'
 import { Form, Link, Navigate, useNavigate } from 'react-router-dom'
 import Api, { authApi, endpoints } from '../configs/Api'
 import cookies from 'react-cookies'
-const Login = props => {
+const Login = () => {
     const nav = useNavigate()
     const [username, setUsername] = useState()
     const [password, setPassword] = useState()
