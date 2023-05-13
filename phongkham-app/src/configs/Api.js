@@ -8,7 +8,9 @@ export const endpoints = {
     "current-user": "/users/current-user/",
     "register": "/users/",
     "dangkykham": "/dangky/",
-    "alaba": "/dangky/",
+    "deactive": (id) => `/dangky/${id}/`,
+    "donkham":  "/donkham/",
+    "thuoc": "/thuoc/"
 }
 
 export const authApi = () => {

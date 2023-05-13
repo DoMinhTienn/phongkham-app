@@ -11,6 +11,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Register from './components/register';
 import DangKyKham from './components/dangkykham';
+import LichKham from './components/lichkham';
+import DonKham from './components/donkham';
 
 export const UserContext = createContext()
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dangkykham" element={<DangKyKham />} />
+          <Route path="/lichkham" element={<LichKham />} />
+          <Route path="/donkham/:Id" element={<DonKham />} />
         </Routes>
         <Footer/>
       </UserContext.Provider>

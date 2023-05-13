@@ -173,7 +173,7 @@ footer ul li a {
   color: black;
 }
 
-.register-user {
+.register-user, .patient-search{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,8 +181,11 @@ footer ul li a {
   color: white;
   padding: 20px;
   }
+  .patient-search {
+    color: #0077be;
+  }
 
-  .register-user form {
+  .register-user form, .patient-search form {
     background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -192,12 +195,13 @@ footer ul li a {
   align-items: center;
   }
   
-  .register-user div:first-child {
+  .register-user div:first-child, .DangkyKham div:first-child, .login-container div:first-child {
   font-size: 24px;
   margin-bottom: 20px;
   color: #0077be;
   font-weight: 600;
   }
+
   .register-user div:last-child {
     font-size: 12px;
     color: #0077be;
@@ -209,12 +213,6 @@ footer ul li a {
       font-weight: 400;
       }
 
-  .login-container div:first-child {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #0077be;
-    font-weight: 600;
-    }
   
   .register-user input {
     width: 100%;
@@ -234,7 +232,17 @@ footer ul li a {
     outline: none;
   }
   
-  .register-user button {
+  .patient-search button, .appointment-btn{
+    background-color: #0077be;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .register-user button, .donkham-container button {
     background-color: #0077be;
     color: white;
     padding: 10px 40px;
@@ -247,3 +255,179 @@ footer ul li a {
   .err{
     border: 2px solid red !important;
   }
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+      width: 450px;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+  }
+
+  
+  
+  .close:hover {
+    opacity: 0.7;
+  }
+  
+  .close-content {
+    font-size: 18px;
+    color: red;
+  }
+
+  .DangkyKham{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: white;
+    padding: 20px;
+  }
+
+  .DangkyKham form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .DangkyKham input, .DangkyKham select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+  
+    
+  }
+  .DangkyKham input:focus {
+    outline: none;
+  }
+  
+  .DangkyKham button {
+    background-color: #0077be;
+    color: white;
+    padding: 10px 40px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  
+  }
+
+  .DangkyKham input[type="date"], .DangkyKham select  {
+    width: 225px;
+
+  }
+
+  .close {
+    color: #0077be !important;
+    font-size: 20px !important; 
+    position: absolute !important;
+    top: 5px;
+    right: 5px;
+    background: none !important;
+    border: none !important;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .patient-name {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  .patient-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .patient-list div.item{
+    width: 400px;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .title{
+    text-align: center;
+  }
+
+  .danger{
+    color: red;
+    font-weight: 600;
+    align-items: center;
+    width: 100% !important;
+  }
+
+  .d{
+    color: #0077be;
+    text-align: center;
+  }
+
+  .donkham-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .donkham-container form {
+    margin: 0 20px;
+    flex-direction: column;
+  align-items: center;
+  }
+  .donkham-container form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .donkham-container form div label {
+    align-self: flex-start;
+    margin-right: 10px;
+  }
+  
+  .donkham-container form div textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .donkham-container form div textarea:focus{
+    outline: none;
+  }
+  
+  .abc {
+    font-size: 20px;
+  }
+  
